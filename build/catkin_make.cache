@@ -1,0 +1,2 @@
+ball_chaser:first_package:my_robot:simple_arm
+-DCATKIN_DEVEL_PREFIX=/home/workspace/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/workspace/catkin_ws/install -G Unix Makefiles
