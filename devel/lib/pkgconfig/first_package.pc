@@ -1,0 +1,8 @@
+prefix=/home/workspace/catkin_ws/devel
+
+Name: first_package
+Description: Description of first_package
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
