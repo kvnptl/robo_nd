@@ -25,4 +25,6 @@ Project list:
 - TODO: add screenshot from project or GIF
 
 
-# TODO - Change directory structure to project wise for convenience
+# TODO list
+- Change directory structure to project wise for convenience
+- system requirements to run the projects
