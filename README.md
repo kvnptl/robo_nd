@@ -22,6 +22,7 @@
       2. Terminal 2: `roslaunch my_robot amcl.launch`
     
    - **Final output**:
+   
       ![image1](https://github.com/kvnptl/robo_nd/blob/master/project4_where_am_I_screenshots/1.png)
 
       ![image2](https://github.com/kvnptl/robo_nd/blob/master/project4_where_am_I_screenshots/2.png)
