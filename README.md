@@ -15,16 +15,16 @@ Project list:
 - Use the Robot Operating System (ROS) to design a mobile robot. Then, house your newly-designed robot in the robotic environment you built in Project 1. You will program your robot with C++ to chase a ball through this world. Skills you will apply: catkin workspaces, ROS packages, ROS nodes, ROS launch files, RViz integration, and C++.
 - TODO: add screenshot from project or GIF
 3. **Where Am I?** (Localization)
-- Use the Monte Carlo Localization algorithm in ROS, in conjunction with sensor data and a map of the world, to estimate a mobile robot’s position and orientation so that your robot can answer the question “Where am I?” Skills you will apply: Localization algorithms: Kalman Filter and MCL, ROS parameters, ROS packages integration, C++.
+>- Use the Monte Carlo Localization algorithm in ROS, in conjunction with sensor data and a map of the world, to estimate a mobile robot’s position and orientation so that your robot can answer the question “Where am I?” Skills you will apply: Localization algorithms: Kalman Filter and MCL, ROS parameters, ROS packages integration, C++.
 
-- How to run:
-1. Terminal 1: `roslaunch my_robot world.launch`
-2. Terminal 2: `roslaunch my_robot amcl.launch`
+>- How to run:
+>>1. Terminal 1: `roslaunch my_robot world.launch`
+>>2. Terminal 2: `roslaunch my_robot amcl.launch`
 
-- Final output:
-![image1](https://github.com/kvnptl/robo_nd/blob/master/project4_where_am_I_screenshots/1.png)
+>- Final output:
+>![image1](https://github.com/kvnptl/robo_nd/blob/master/project4_where_am_I_screenshots/1.png)
 
-![image2](https://github.com/kvnptl/robo_nd/blob/master/project4_where_am_I_screenshots/2.png)
+>>>![image2](https://github.com/kvnptl/robo_nd/blob/master/project4_where_am_I_screenshots/2.png)
 
 
 4. **Map My World** (Mapping and SLAM)
