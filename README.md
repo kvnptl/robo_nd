@@ -17,6 +17,10 @@ Project list:
 3. **Where Am I?** (Localization)
 - Use the Monte Carlo Localization algorithm in ROS, in conjunction with sensor data and a map of the world, to estimate a mobile robot’s position and orientation so that your robot can answer the question “Where am I?” Skills you will apply: Localization algorithms: Kalman Filter and MCL, ROS parameters, ROS packages integration, C++.
 
+- How to run:
+1. Terminal 1: `roslaunch my_robot world.launch`
+2. Terminal 2: `roslaunch my_robot amcl.launch`
+
 - Final output:
 ![image1](https://github.com/kvnptl/robo_nd/blob/master/project4_where_am_I_screenshots/1.png)
 
