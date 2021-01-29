@@ -16,7 +16,13 @@ Project list:
 - TODO: add screenshot from project or GIF
 3. **Where Am I?** (Localization)
 - Use the Monte Carlo Localization algorithm in ROS, in conjunction with sensor data and a map of the world, to estimate a mobile robot’s position and orientation so that your robot can answer the question “Where am I?” Skills you will apply: Localization algorithms: Kalman Filter and MCL, ROS parameters, ROS packages integration, C++.
-- TODO: add screenshot from project or GIF
+
+- Final output:
+![image1](https://github.com/kvnptl/robo_nd/blob/master/project4_where_am_I_screenshots/1.png)
+
+![image2](https://github.com/kvnptl/robo_nd/blob/master/project4_where_am_I_screenshots/2.png)
+
+
 4. **Map My World** (Mapping and SLAM)
 - Simultaneous Localization and Mapping (SLAM) can be implemented in a number of ways depending on the sensors used via various ROS packages. Use a ROS SLAM package and simulated sensor data to create an agent that can both map the world around it, and localize within it. Skills you will apply: Mapping and SLAM algorithms, Occupancy Grid Mapping, Grid-based FastSLAM and GraphSLAM, ROS debugging tools, C++.
 - TODO: add screenshot from project or GIF
