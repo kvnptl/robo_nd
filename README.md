@@ -3,6 +3,8 @@
 ## Introduction
 
   Begin your exploration into the world of robotics software engineering with a practical, system-focused approach to programming robots using the ROS framework and C++. In addition, learn and apply robotics software engineering algorithms such as localization, mapping, and navigation.
+  
+  ![image](https://github.com/kvnptl/robo_nd/blob/master/udacity_robo-nd.jpg)
 
   - [Course link](https://www.udacity.com/course/robotics-software-engineer--nd209)
   - [Syllabus](https://d20vrrgs8k4bvw.cloudfront.net/documents/en-US/nd209_Robo_syllabus_v2.pdf)
