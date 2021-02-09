@@ -2,6 +2,6 @@
 <launch>
 
   <!-- move robot using keyboard-->
-  <node name="teleop_twist_keyboard" pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py"></node>
+  <node name="teleop_twist_keyboard" pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py" output="screen"></node>
 
 </launch>
