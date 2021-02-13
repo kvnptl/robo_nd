@@ -2,7 +2,7 @@
 #include <visualization_msgs/Marker.h>
 #include "std_msgs/String.h"
 
-int x {0};
+int x = 0;
 
 void callBack(std_msgs::String ack_msg)
 {
@@ -155,7 +155,7 @@ int main( int argc, char** argv )
       }
       marker_pub.publish(marker);
     }
-    
+
     // r.sleep();
     // ros::Duration(5).sleep(); // sleep for 5 seconds
 
