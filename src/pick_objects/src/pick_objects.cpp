@@ -27,7 +27,9 @@ int main(int argc, char** argv){
   // ************//
   // sending pick-up location
   // ************//
-  ros::Publisher acknowledgement_pub = n.advertise<std_msgs::String>("acknowledgement", 1000);
+  n.setParam("pick_up_acknowledgement", false)
+  n.setParam("drop_off_acknowledgement", false)
+  // ros::Publisher acknowledgement_pub = n.advertise<std_msgs::String>("acknowledgement", 1000);
 
   // Define a position and orientation for the robot to reach
   goal.target_pose.pose.position.x = -3.0;
@@ -45,9 +47,10 @@ int main(int argc, char** argv){
   // Check if the robot reached its goal
   if(ac.getState() == actionlib::SimpleClientGoalState::SUCCEEDED){
     ROS_INFO("Hooray, the robot reached pick-up goal position");
-    std_msgs::String msg1;
-    msg1.data = "p";
-    acknowledgement_pub.publish(msg1);
+    // std_msgs::String msg1;
+    // msg1.data = "p";
+    // acknowledgement_pub.publish(msg1);
+    n.setParam("pick_up_acknowledgement", true)
   }
   else
     ROS_INFO("The robot failed to reach pick-up location for some reason");
@@ -72,9 +75,10 @@ int main(int argc, char** argv){
   // Check if the robot reached its goal
   if(ac.getState() == actionlib::SimpleClientGoalState::SUCCEEDED){
     ROS_INFO("Hooray, the robot reached drop-off goal position");
-    std_msgs::String msg2;
-    msg2.data = "d";
-    acknowledgement_pub.publish(msg2);
+    // std_msgs::String msg2;
+    // msg2.data = "d";
+    // acknowledgement_pub.publish(msg2);
+    n.setParam("drop_off_acknowledgement", true)
   }
   else
     ROS_INFO("The robot failed to reach drop-off position for some reason");
