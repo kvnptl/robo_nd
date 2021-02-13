@@ -27,8 +27,8 @@ int main(int argc, char** argv){
   // ************//
   // sending pick-up location
   // ************//
-  n.setParam("pick_up_acknowledgement", false)
-  n.setParam("drop_off_acknowledgement", false)
+  n.setParam("pick_up_acknowledgement", false);
+  n.setParam("drop_off_acknowledgement", false);
   // ros::Publisher acknowledgement_pub = n.advertise<std_msgs::String>("acknowledgement", 1000);
 
   // Define a position and orientation for the robot to reach
@@ -50,7 +50,7 @@ int main(int argc, char** argv){
     // std_msgs::String msg1;
     // msg1.data = "p";
     // acknowledgement_pub.publish(msg1);
-    n.setParam("pick_up_acknowledgement", true)
+    n.setParam("pick_up_acknowledgement", true);
   }
   else
     ROS_INFO("The robot failed to reach pick-up location for some reason");
@@ -78,7 +78,7 @@ int main(int argc, char** argv){
     // std_msgs::String msg2;
     // msg2.data = "d";
     // acknowledgement_pub.publish(msg2);
-    n.setParam("drop_off_acknowledgement", true)
+    n.setParam("drop_off_acknowledgement", true);
   }
   else
     ROS_INFO("The robot failed to reach drop-off position for some reason");
