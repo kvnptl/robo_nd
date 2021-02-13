@@ -105,7 +105,9 @@ int main( int argc, char** argv )
     //robot odometry subscriber
     ros::Subscriber sub = n.subscribe("acknowledgement", 1000, callBack);
 
-
+    ROS_INFO("<-----BEFORE SPIN------>");
+    ros::spin();
+    ROS_INFO("<-----AFTER SPIN------>");
 
     if (x == 1){
       ROS_INFO("<-----pick-up acknowledgement received------>");
@@ -161,11 +163,10 @@ int main( int argc, char** argv )
       marker_pub.publish(marker);
     }
 
-    ROS_INFO("<-----BEFORE SPIN------>");
-    // ros::spin();
-    ROS_INFO("<-----AFTER SPIN------>");
+
     // r.sleep();
     // ros::Duration(5).sleep(); // sleep for 5 seconds
 
   }
+  return 0;
 }
