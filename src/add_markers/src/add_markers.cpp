@@ -30,6 +30,7 @@ int main( int argc, char** argv )
   // while (ros::ok())
   if (ros::ok())
   {
+    ROS_INFO("ROS IS OKKKKK");
     visualization_msgs::Marker marker;
     // Set the frame ID and timestamp.  See the TF tutorials for information on these.
     marker.header.frame_id = "map";
@@ -102,14 +103,16 @@ int main( int argc, char** argv )
     //robot odometry subscriber
     ros::Subscriber sub = n.subscribe("acknowledgement", 1000, callBack);
 
-    ros::spin();
+
 
     if (x == 1){
+      ROS_INFO("<-----pick-up acknowledgement received------>");
       ros::Duration(5).sleep();
       marker.action = visualization_msgs::Marker::DELETE;
       marker_pub.publish(marker);
     }
     else if (x == 2){
+      ROS_INFO("<-----drop-off acknowledgement received------>");
       // Set the namespace and id for this marker.  This serves to create a unique ID
       // Any marker sent with the same namespace and id will overwrite the old one
       marker.ns = "basic_shapes_2";
@@ -156,6 +159,7 @@ int main( int argc, char** argv )
       marker_pub.publish(marker);
     }
 
+    ros::spin();
     // r.sleep();
     // ros::Duration(5).sleep(); // sleep for 5 seconds
 
