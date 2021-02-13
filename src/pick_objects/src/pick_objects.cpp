@@ -9,7 +9,7 @@ typedef actionlib::SimpleActionClient<move_base_msgs::MoveBaseAction> MoveBaseCl
 int main(int argc, char** argv){
   // Initialize the pick_objects node
   ros::init(argc, argv, "pick_objects");
-
+  ros::NodeHandle n;
   //tell the action client that we want to spin a thread by default
   MoveBaseClient ac("move_base", true);
 
@@ -43,11 +43,12 @@ int main(int argc, char** argv){
   ac.waitForResult();
 
   // Check if the robot reached its goal
-  if(ac.getState() == actionlib::SimpleClientGoalState::SUCCEEDED)
+  if(ac.getState() == actionlib::SimpleClientGoalState::SUCCEEDED){
     ROS_INFO("Hooray, the robot reached pick-up goal position");
-    std_msgs::String msg;
-    msg.data = "p";
-    acknowledgement_pub.publish(msg);
+    std_msgs::String msg1;
+    msg1.data = "p";
+    acknowledgement_pub.publish(msg1);
+  }
   else
     ROS_INFO("The robot failed to reach pick-up location for some reason");
 
@@ -69,11 +70,12 @@ int main(int argc, char** argv){
   ac.waitForResult();
 
   // Check if the robot reached its goal
-  if(ac.getState() == actionlib::SimpleClientGoalState::SUCCEEDED)
+  if(ac.getState() == actionlib::SimpleClientGoalState::SUCCEEDED){
     ROS_INFO("Hooray, the robot reached drop-off goal position");
-    std_msgs::String msg;
-    msg.data = "d";
-    acknowledgement_pub.publish(msg);
+    std_msgs::String msg2;
+    msg2.data = "d";
+    acknowledgement_pub.publish(msg2);
+  }
   else
     ROS_INFO("The robot failed to reach drop-off position for some reason");
 
