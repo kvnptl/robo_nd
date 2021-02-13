@@ -88,7 +88,7 @@ int main( int argc, char** argv )
     marker_pub.publish(marker);
     // ROS_INFO("<-----AFTER MARKER 1 PUBLISH------>");
 
-    n.getParam("pick_up_acknowledgement", pick_up_acknowledgement)
+    n.getParam("pick_up_acknowledgement", pick_up_acknowledgement);
     if (pick_up_acknowledgement) break;
   }
     // ros::Duration(5).sleep(); // sleep for 5 seconds
@@ -117,7 +117,7 @@ int main( int argc, char** argv )
     marker_pub.publish(marker);
 
     while(1){
-      n.getParam("drop_off_acknowledgement", drop_off_acknowledgement)
+      n.getParam("drop_off_acknowledgement", drop_off_acknowledgement);
       if (drop_off_acknowledgement) break;
     }
 
