@@ -129,7 +129,7 @@ int main( int argc, char** argv )
       //   marker_pub.publish(marker);
       // }
       // else if (x == 2){
-        ROS_INFO("<-----drop-off acknowledgement received------>");
+        // ROS_INFO("<-----drop-off acknowledgement received------>");
         // Set the namespace and id for this marker.  This serves to create a unique ID
         // Any marker sent with the same namespace and id will overwrite the old one
         marker.ns = "basic_shapes_2";
@@ -175,7 +175,9 @@ int main( int argc, char** argv )
         }
         marker_pub.publish(marker);
 
-        break;
+        ROS_INFO("Package Arrived:");
+
+        // break;
       }
 
     // r.sleep();
