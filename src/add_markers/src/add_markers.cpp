@@ -57,9 +57,9 @@ int main( int argc, char** argv )
     marker.pose.orientation.w = 1.0;
 
     // Set the scale of the marker -- 1x1x1 here means 1m on a side
-    marker.scale.x = 1.0;
-    marker.scale.y = 1.0;
-    marker.scale.z = 1.0;
+    marker.scale.x = 0.5;
+    marker.scale.y = 0.5;
+    marker.scale.z = 0.5;
 
     // Set the color -- be sure to set alpha to something non-zero!
     marker.color.r = 0.0f;
@@ -76,10 +76,12 @@ int main( int argc, char** argv )
       {
         return 0;
       }
-      ROS_WARN_ONCE("Please create a subscriber to the marker");
+      ROS_WARN_ONCE("Please create a subscriber to the marker 1");
       sleep(1);
     }
+    ROS_INFO("<-----BEFORE MARKER 1 PUBLISH------>");
     marker_pub.publish(marker);
+    ROS_INFO("<-----AFTER MARKER 1 PUBLISH------>");
 
     // ros::Duration(5).sleep(); // sleep for 5 seconds
 
@@ -134,9 +136,9 @@ int main( int argc, char** argv )
       marker.pose.orientation.w = 1.0;
 
       // Set the scale of the marker -- 1x1x1 here means 1m on a side
-      marker.scale.x = 1.0;
-      marker.scale.y = 1.0;
-      marker.scale.z = 1.0;
+      marker.scale.x = 0.5;
+      marker.scale.y = 0.5;
+      marker.scale.z = 0.5;
 
       // Set the color -- be sure to set alpha to something non-zero!
       marker.color.r = 0.0f;
@@ -153,13 +155,15 @@ int main( int argc, char** argv )
         {
           return 0;
         }
-        ROS_WARN_ONCE("Please create a subscriber to the marker");
+        ROS_WARN_ONCE("Please create a subscriber to the marker 2");
         sleep(1);
       }
       marker_pub.publish(marker);
     }
 
+    ROS_INFO("<-----BEFORE SPIN------>");
     ros::spin();
+    ROS_INFO("<-----AFTER SPIN------>");
     // r.sleep();
     // ros::Duration(5).sleep(); // sleep for 5 seconds
 
