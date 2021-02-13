@@ -162,7 +162,7 @@ int main( int argc, char** argv )
     }
 
     ROS_INFO("<-----BEFORE SPIN------>");
-    ros::spin();
+    // ros::spin();
     ROS_INFO("<-----AFTER SPIN------>");
     // r.sleep();
     // ros::Duration(5).sleep(); // sleep for 5 seconds
