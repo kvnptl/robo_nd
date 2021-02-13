@@ -73,7 +73,7 @@ int main( int argc, char** argv )
   while (ros::ok())
   {
     // marker.lifetime = ros::Duration(5);
-    ROS_INFO("ROS IS OKKKKK");
+    // ROS_INFO("ROS IS OKKKKK");
     // Publish the marker
     while (marker_pub.getNumSubscribers() < 1)
     {
@@ -174,6 +174,8 @@ int main( int argc, char** argv )
           sleep(1);
         }
         marker_pub.publish(marker);
+
+        break;
       }
 
     // r.sleep();
