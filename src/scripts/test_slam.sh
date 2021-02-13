@@ -1,8 +1,8 @@
 #!/bin/sh
-xterm  -e  " roslaunch turtlebot_gazebo turtlebot_world.launch world_file:=/home/workspace/robo-nd-HSR/src/map/world/test_map.world" &
-sleep 5
-xterm  -e  " rosrun gmapping slam_gmapping" &
-sleep 5
+xterm  -e  " roslaunch my_robot world.launch" &
+sleep 20
+xterm  -e  " roslaunch my_robot gmapping.launch" &
+sleep 10
 xterm  -e  " roslaunch turtlebot_rviz_launchers view_navigation.launch" &
-sleep 5
-xterm  -e  " roslaunch turtlebot_teleop keyboard_teleop.launch"
+sleep 15
+xterm  -e  " rosrun teleop_twist_keyboard teleop_twist_keyboard.py"
