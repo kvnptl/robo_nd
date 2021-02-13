@@ -25,6 +25,7 @@
     <param name="laser_z_rand" value="0.05"/>
     <param name="laser_z_hit" value="0.95"/>
     <param name="laser_max_beams" value="40"/>
+    <param name="initial_pose_a" value="1.57"/>
   </node>
 
   <!-- Move Base -->
