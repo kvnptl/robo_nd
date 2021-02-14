@@ -24,7 +24,7 @@
   </include>
 
   <!-- Find my robot Description-->
-  <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find my_robot)/urdf/my_robot.xacro'"/>
+  <!-- <param name="robot_description" command="$(find xacro)/xacro #add two hyphens here#inorder '$(find my_robot)/urdf/my_robot.xacro'"/> -->
 
   <!--launch rviz-->
   <!-- <node name="rviz" pkg="rviz" type="rviz" args="-d $(find ball_chaser)/rviz/rviz_config.rviz" respawn="false"/> -->
