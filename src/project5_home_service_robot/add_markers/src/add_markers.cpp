@@ -89,7 +89,10 @@ int main( int argc, char** argv )
     // ROS_INFO("<-----AFTER MARKER 1 PUBLISH------>");
 
     n.getParam("pick_up_acknowledgement", pick_up_acknowledgement);
-    if (pick_up_acknowledgement) break;
+    if (pick_up_acknowledgement){
+      ROS_INFO("Robot is ready to pick up...");
+      break;
+    }
   }
     // ros::Duration(5).sleep(); // sleep for 5 seconds
 
@@ -118,7 +121,10 @@ int main( int argc, char** argv )
 
     while(1){
       n.getParam("drop_off_acknowledgement", drop_off_acknowledgement);
-      if (drop_off_acknowledgement) break;
+      if (drop_off_acknowledgement){
+        ROS_INFO("Robot arrived at destination...");
+        break;
+      }
     }
 
     while (ros::ok()){
@@ -175,7 +181,7 @@ int main( int argc, char** argv )
         }
         marker_pub.publish(marker);
 
-        ROS_INFO("Package Arrived:");
+        // ROS_INFO("Package Arrived:");
 
         // break;
       }
