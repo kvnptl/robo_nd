@@ -54,8 +54,8 @@
       1. Terminal 1: `$(rospack find scripts)/home_service_robot.sh`
     
    - **Final output**:
-   
-      ![vid1](https://github.com/kvnptl/robo_nd/blob/master/src/project5_home_service_robot/home%20service%20robot.gif)
+ 
+      ![gif](https://github.com/kvnptl/robo_nd/blob/master/src/project5_home_service_robot/home-service-robot.gif)
 
 # TODO list
   - Change directory structure to project wise for convenience
