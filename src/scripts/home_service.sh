@@ -1,6 +1,6 @@
 #!/bin/sh
 xterm  -e  " roslaunch my_robot world.launch" &
-sleep 15
+sleep 20
 xterm  -e  " roslaunch my_robot amcl.launch map_file:=$(rospack find map)/myMap.yaml" &
 sleep 15
 xterm  -e  " rosrun rviz rviz -d $(rospack find rvizConfig)/rvizConfig.rviz" &
