@@ -27,6 +27,21 @@
    - ROS navigation package: `sudo apt-get install ros-${ROS_DISTRO}-move-base`
    - ROS gmapping package: `sudo apt-get install ros-${ROS_DISTRO}-slam-gmapping`
    
+### Mapping
+   - We will create a map of the environment using Grid SLAM algorithm, and it will generate an occupancy grid map (pgm file) which would be used for localization and navigation tasks.
+   - Run `test_slam.sh` to create occupancy grid map (save a map with `rosrun map_server map_saver -f myMap` command)
+   - Performed using [ROS `gmapping` package](http://wiki.ros.org/gmapping)
+
+### Localization and Navigation
+   - Robot localization is the process of determining where a mobile robot is located with respect to its environment. Here we will use AMCL package to localize the robot in our environment.
+   - Run `test_navigation.sh` to navigate around the map by providing 2D Nav Goal from Rviz
+   - Performed using [ROS `amcl` package](http://wiki.ros.org/amcl)
+
+### Path planning
+   - The path planning and navigation is done using the turtlebot_gazebo package. Under the hood, this is based on Dijkstra's shortest path algorithm, which is a variant of the Uniform Cost Search algorithm. Using a path planning package like this permits a robot to avoid any encountered obstacles in its path by re-planning a new trajectory.
+   - Run `home_service_robot.sh` which initiate robot pick-up location and drop-off location, and the robot will plan its trajectory automatically
+   - Performed using [ROS `move_base` package](http://wiki.ros.org/move_base)
+   
 ### **How to run**:
       1. Terminal 1: `$(rospack find scripts)/home_service_robot.sh`
     
