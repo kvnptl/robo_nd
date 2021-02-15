@@ -46,7 +46,7 @@
       ![image2](https://github.com/kvnptl/robo_nd/blob/master/project4_map_my_world/3D%20map%202.png)
 
 
-###  5. **Home Service Robot** (Path Planning and Navigation)
+###  5. [**Home Service Robot** (Path Planning and Navigation)](https://github.com/kvnptl/robo_nd/blob/master/src/project5_home_service_robot/README.md)
    - Combine everything you’ve learned in this program to simulate a home service robot that can map, localize, and navigate to transport objects, moving from one room to another autonomously. Skills you will apply: Path Planning search algorithms, ROS navigation stack, C++.
    
    - **How to run**:
@@ -54,7 +54,11 @@
     
    - **Final output**:
  
-      ![gif](https://github.com/kvnptl/robo_nd/blob/master/src/project5_home_service_robot/home-service-robot.gif)
+2D occupancy grid map      |  Gazebo world
+:-------------------------:|:-------------------------:
+![img1](https://github.com/kvnptl/robo_nd/blob/master/src/project5_home_service_robot/result/2D%20map.png)  |  ![img2](https://github.com/kvnptl/robo_nd/blob/master/src/project5_home_service_robot/result/gazebo%20world.png)
+
+  ![gif](https://github.com/kvnptl/robo_nd/blob/master/src/project5_home_service_robot/result/home-service-robot.gif)
 
 # TODO list
   - Change directory structure to project wise for convenience
