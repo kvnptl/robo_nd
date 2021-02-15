@@ -25,9 +25,9 @@
     
    - **Final output**:
    
-      ![image1](https://github.com/kvnptl/robo_nd/blob/master/project4_where_am_I_screenshots/1.png)
+      ![image1](https://github.com/kvnptl/robo_nd/blob/master/project3_where_am_I/1.png)
 
-      ![image2](https://github.com/kvnptl/robo_nd/blob/master/project4_where_am_I_screenshots/2.png)
+      ![image2](https://github.com/kvnptl/robo_nd/blob/master/project3_where_am_I/2.png)
 
 
 ###  4. **Map My World** (Mapping and SLAM)
@@ -41,9 +41,9 @@
     
    - **Final output**:
    
-      ![image1](https://github.com/kvnptl/robo_nd/blob/master/project5_map_my_world/2D%20map%202.png)
+      ![image1](https://github.com/kvnptl/robo_nd/blob/master/project4_map_my_world/2D%20map%202.png)
 
-      ![image2](https://github.com/kvnptl/robo_nd/blob/master/project5_map_my_world/3D%20map%202.png)
+      ![image2](https://github.com/kvnptl/robo_nd/blob/master/project4_map_my_world/3D%20map%202.png)
 
 
 ###  5. **Home Service Robot** (Path Planning and Navigation)
