@@ -15,7 +15,17 @@
    - The custom build mobile robot drives aroung the environment for mapping using `gmapping` package and create an **occupancy grid map**. After having the map, it uses laser range finder and odometry data to localize itself itself by utilizing **Adaptive Monte Carlo Localization (AMCL)**. User can predefine the pick-up and delivery points for the robot, and it uses those navigation goals to autonomously plans trajectory using **Dijikstra algorithm** to accomplish the task. 
    
 ### Tested on:
+   - Ubuntu 18.04
    - ROS Kinetic
+   - Gazebo
+   - Rviz
+
+### Pre-Requisite: 
+   - Install xterm: `sudo apt-get install xterm`
+   - To load map (pgm file): `sudo apt-get install ros-${ROS_DISTRO}-map-server`
+   - Localization algorithm: `sudo apt-get install ros-${ROS_DISTRO}-amcl`
+   - ROS navigation package: `sudo apt-get install ros-${ROS_DISTRO}-move-base`
+   - ROS gmapping package: `sudo apt-get install ros-${ROS_DISTRO}-slam-gmapping`
    
 ### **How to run**:
       1. Terminal 1: `$(rospack find scripts)/home_service_robot.sh`
