@@ -2,7 +2,7 @@
 
 ## Introduction
 
-  Begin your exploration into the world of robotics software engineering with a practical, system-focused approach to programming robots using the ROS framework and C++. In addition, learn and apply robotics software engineering algorithms such as localization, mapping, and navigation.
+  Begin exploration into the world of robotics software engineering with a practical, system-focused approach to programming robots using the ROS framework and C++. In addition, learn and apply robotics software engineering algorithms such as localization, mapping, and navigation.
   
   ![image](https://github.com/kvnptl/robo_nd/blob/master/udacity_robo-nd.jpg)
 
@@ -11,7 +11,7 @@
 
 ## Project list:
 ###  1. **Build My World** (Gazebo World)
-   - Use Gazebo to simulate a robotic environment comprised of a building to house your future robot. Skills you will apply: Gazebo, C++ plugins.
+   - Use Gazebo to simulate a robotic environment comprised of a building to house your future robot. Skills apply: Gazebo, C++ plugins.
    
    - **How to run**:
       1. Terminal 1: `gazebo /src/project1/world/project_1_world`
@@ -22,7 +22,7 @@
 
 
 ###  2. **Go Chase It!** (ROS Essentials)
-   - Use the Robot Operating System (ROS) to design a mobile robot. Then, house your newly-designed robot in the robotic environment you built in Project 1. You will program your robot with C++ to chase a ball through this world. Skills you will apply: catkin workspaces, ROS packages, ROS nodes, ROS launch files, RViz integration, and C++.
+   - Use the Robot Operating System (ROS) to design a mobile robot. Then, house newly-designed robot in the robotic environment built in Project 1. Program robot with C++ to chase a ball through this world. Skills apply: catkin workspaces, ROS packages, ROS nodes, ROS launch files, RViz integration, and C++.
    
    - **How to run**:
       1. Terminal 1: `roslaunch project2 world.launch`
@@ -34,7 +34,7 @@
 
 
 ###  3. **Where Am I?** (Localization)
-   - Use the Monte Carlo Localization algorithm in ROS, in conjunction with sensor data and a map of the world, to estimate a mobile robot’s position and orientation so that your robot can answer the question “Where am I?” Skills you will apply: Localization algorithms: Kalman Filter and MCL, ROS parameters, ROS packages integration, C++.
+   - Use the Monte Carlo Localization algorithm in ROS, in conjunction with sensor data and a map of the world, to estimate a mobile robot’s position and orientation so that robot can answer the question “Where am I?” Skills apply: Localization algorithms: Kalman Filter and MCL, ROS parameters, ROS packages integration, C++.
    
    - **How to run**:
       1. Terminal 1: `roslaunch my_robot world.launch`
@@ -48,8 +48,7 @@
 
 
 ###  4. **Map My World** (Mapping and SLAM)
-   - Simultaneous Localization and Mapping (SLAM) can be implemented in a number of ways depending on the sensors used via various ROS packages. Use a ROS SLAM package and simulated sensor data to create an agent that can both map the world around it, and localize within it. Skills you will apply: Mapping and SLAM algorithms, Occupancy Grid Mapping, Grid-based FastSLAM and GraphSLAM, ROS debugging tools, C++.
-   - TODO: add screenshot of final rtabmap and GIF of rtab map
+   - Simultaneous Localization and Mapping (SLAM) can be implemented in a number of ways depending on the sensors used via various ROS packages. Use a ROS SLAM package and simulated sensor data to create an agent that can both map the world around it, and localize within it. Skills apply: Mapping and SLAM algorithms, Occupancy Grid Mapping, Grid-based FastSLAM and GraphSLAM, ROS debugging tools, C++.
 
    - **How to run**:
       1. Terminal 1: `roslaunch my_robot world.launch`
@@ -79,6 +78,3 @@
 ![img1](https://github.com/kvnptl/robo_nd/blob/master/project5_Home_Service_Robot/2D%20map.png)  |  ![img2](https://github.com/kvnptl/robo_nd/blob/master/project5_Home_Service_Robot/gazebo%20world.png)
 
   ![gif](https://github.com/kvnptl/robo_nd/blob/master/project5_Home_Service_Robot/home-service-robot.gif)
-
-# TODO list
-  - Change directory structure to project wise for convenience
