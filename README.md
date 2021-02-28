@@ -12,7 +12,15 @@
 ## Project list:
 ###  1. **Build My World** (Gazebo World)
    - Use Gazebo to simulate a robotic environment comprised of a building to house your future robot. Skills you will apply: Gazebo, C++ plugins.
-   - TODO: add screenshot from project or GIF
+   -
+   - **How to run**:
+      1. Terminal 1: `gazebo /src/project1/world/project_1_world`
+    
+   - **Final output**:
+   
+      ![image1](https://github.com/kvnptl/robo_nd/blob/master/project1_build_my_world/gazebo_world.png)
+
+
 ###  2. **Go Chase It!** (ROS Essentials)
    - Use the Robot Operating System (ROS) to design a mobile robot. Then, house your newly-designed robot in the robotic environment you built in Project 1. You will program your robot with C++ to chase a ball through this world. Skills you will apply: catkin workspaces, ROS packages, ROS nodes, ROS launch files, RViz integration, and C++.
    - TODO: add screenshot from project or GIF
