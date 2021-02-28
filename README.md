@@ -18,7 +18,7 @@
     
    - **Final output**:
    
-      ![image1](https://github.com/kvnptl/robo_nd/blob/master/project1_build_my_world/gazebo_world.png)
+      ![image1](https://github.com/kvnptl/robo_nd/blob/master/project1_Build_My_World/gazebo_world.png)
 
 
 ###  2. **Go Chase It!** (ROS Essentials)
@@ -42,9 +42,9 @@
     
    - **Final output**:
    
-      ![image1](https://github.com/kvnptl/robo_nd/blob/master/project3_where_am_I/1.png)
+      ![image1](https://github.com/kvnptl/robo_nd/blob/master/project3_Where_Am_I/1.png)
 
-      ![image2](https://github.com/kvnptl/robo_nd/blob/master/project3_where_am_I/2.png)
+      ![image2](https://github.com/kvnptl/robo_nd/blob/master/project3_Where_Am_I/2.png)
 
 
 ###  4. **Map My World** (Mapping and SLAM)
@@ -58,9 +58,9 @@
     
    - **Final output**:
    
-      ![image1](https://github.com/kvnptl/robo_nd/blob/master/project4_map_my_world/2D%20map%202.png)
+      ![image1](https://github.com/kvnptl/robo_nd/blob/master/project4_Map_My_World/2D%20map%202.png)
 
-      ![image2](https://github.com/kvnptl/robo_nd/blob/master/project4_map_my_world/3D%20map%202.png)
+      ![image2](https://github.com/kvnptl/robo_nd/blob/master/project4_Map_My_World/3D%20map%202.png)
 
 
 ###  5. [**Home Service Robot** (Path Planning and Navigation)](https://github.com/kvnptl/robo_nd/blob/master/src/project5_home_service_robot/README.md)
@@ -82,4 +82,3 @@
 
 # TODO list
   - Change directory structure to project wise for convenience
-  - system requirements to run the projects
