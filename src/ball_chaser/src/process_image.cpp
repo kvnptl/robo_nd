@@ -41,18 +41,18 @@ void process_image_callback(const sensor_msgs::Image img)
 
             if ((i % img.step) < (img.step / 3)){
              // drive_robot(0.0, 0.2);
-	       linX = 0.0;
-	       angZ = 0.2;
+	        linX = 0.0;
+	        angZ = 0.5;
 	    }
 
             else if ((i % img.step) > (img.step*2 / 3)){
-	      linX = 0.0;
-	      angZ = -0.2;
+	        linX = 0.0;
+	        angZ = -0.5;
               //drive_robot(0.0, -0.2);
 	    }
             else{
-	      linX = 0.3;
-	      angZ = 0.0;
+	        linX = 0.5;
+	        angZ = 0.0;
              // drive_robot(0.3, 0.0);
 	    }
             break;
