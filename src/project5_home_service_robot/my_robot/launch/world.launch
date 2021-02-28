@@ -26,7 +26,6 @@
   <!--launch rviz-->
   <node name="rviz" pkg="rviz" type="rviz" args="-d $(find ball_chaser)/rviz/rviz_config.rviz" respawn="false"/>
 
-
   <!-- Spawn My Robot -->
   <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
         args="-urdf -param robot_description -model my_robot
