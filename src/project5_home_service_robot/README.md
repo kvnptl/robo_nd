@@ -4,9 +4,9 @@
 
 2D occupancy grid map      |  Gazebo world
 :-------------------------:|:-------------------------:
-![img1](https://github.com/kvnptl/robo_nd/blob/master/src/project5_home_service_robot/result/2D%20map.png)  |  ![img2](https://github.com/kvnptl/robo_nd/blob/master/src/project5_home_service_robot/result/gazebo%20world.png)
+![img1](https://github.com/kvnptl/robo_nd/blob/master/project5_Home_Service_Robot/2D%20map.png)  |  ![img2](https://github.com/kvnptl/robo_nd/blob/master/project5_Home_Service_Robot/gazebo%20world.png)
 
-![gif](https://github.com/kvnptl/robo_nd/blob/master/src/project5_home_service_robot/result/home-service-robot.gif)
+![gif](https://github.com/kvnptl/robo_nd/blob/master/project5_Home_Service_Robot/home-service-robot.gif)
 
 ### Introduction
    - Combine everything learned in this program to simulate a home service robot that can map, localize, and navigate to transport objects, moving from one room to another autonomously. Skills will apply: Path Planning search algorithms, ROS navigation stack, C++.
