@@ -1,5 +1,5 @@
 # Robotics Software Engineer nanodegree - Udacity
-
+[![Udacity - Robotics NanoDegree Program](https://s3-us-west-1.amazonaws.com/udacity-robotics/Extra+Images/RoboND_flag.png)](https://www.udacity.com/robotics)
 ## Introduction
 
   Begin exploration into the world of robotics software engineering with a practical, system-focused approach to programming robots using the ROS framework and C++. In addition, learn and apply robotics software engineering algorithms such as localization, mapping, and navigation.
